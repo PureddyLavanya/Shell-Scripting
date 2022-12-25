@@ -1,1 +1,99 @@
+	#MAKING A DIRECTORY USING "mkdir"  COMMAND
+HP@LAPTOP-TLLCTFRT 
+$ mkdir d1			
 
+	#CHANGING THE DIRECTORY USING "cd" COMMAND
+HP@LAPTOP-TLLCTFRT 
+$cd d1
+
+	#DISPLAYING TEXT USING "echo" COMMAND
+HP@LAPTOP-TLLCTFRT ~/d1
+$ echo "Welcome To Unix And Shell Programming"
+Welcome To Unix And Shell Programming
+
+	#DISPLAYING TODAY DATE USING "date" COMMAND
+$ echo "Today date is `date`"
+Today date is Sun Dec 25 13:04:03 IST 2022
+
+	#CREATING FILES USING "cat" COMMAND
+$ cat >f1
+123
+456
+789
+
+$ cat >f2
+apple
+bat
+cat
+dog
+
+$ echo "Two file are created"
+Two file are created
+
+	#OPENING CREATED FILE USING "cat" COMMAND
+$ echo "Opening a created file `cat f1`"
+Opening a created file 123
+456
+789
+
+	#GETTING PRESENT WORKING DIRECTORY USING "pwd" COMMAND
+$ echo "Present Working directory is: `pwd`"
+Present Working directory is: /home/HP/d1
+
+	#COPYING FILE USING "cp" COMMAND
+#$ echo "Demo on copying files: `cp f1 f3`"
+Demo on copying files:
+
+$ cat f3
+123
+456
+789
+
+$cat f1
+123
+456
+789
+
+	#MOVING A FILE USING "mv" COMMAND
+$ echo "Demo on moving files: `mv f1 f4`"
+Demo on moving files:
+
+$ cat f4
+123
+456
+789
+
+$ cat f1
+cat: f1: No such file or directory
+
+	#GETTING LIST OF ALL FILES IN A DIRECTORY USING "ls" COMMAND"
+$ echo "Listing of file in present working directory: `ls`"
+Listing of file in present working directory: =90
+d1
+f1
+f2
+f3
+
+	#GETTING LONG LISTING OF ALL FILES IN A DIRECTORY USING "ls -l" COMMAND
+$ echo "Long listing of all files in present working directory: `ls -l`"
+Long listing of all files in present working directory: total 2
+-rw-r--r-- 1 HP None  0 Dec 14 19:41 =90
+drwxr-xr-x 1 HP None  0 Dec 25 13:05 d2
+-rwxrwxrwx 1 HP None 12 Dec 25 13:06 f1
+-rw-r--r-- 1 HP None 18 Dec 25 13:06 f2
+-rw-r--r-- 1 HP None 12 Dec 25 13:10 f3
+
+	#CREATING AN EMPTY FILE USING "touch" COMMAND
+$ touch f5
+$ cat f5
+
+
+	#GETTING CALENDER OF PRESENT MONTH USING "cal" COMMAND
+$ cal
+    December 2022
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
