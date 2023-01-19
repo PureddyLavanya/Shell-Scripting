@@ -73,6 +73,15 @@ d1
 f1
 f2
 f3
+f5
+
+	#REMOVING A FILE USING "rm" COMMAND
+$ ls
+'=90'   d2   f2   f3   f4   f5   script.sh
+$ rm f5
+$ cat f5
+cat: f5: No such file or directory
+
 
 	#GETTING LONG LISTING OF ALL FILES IN A DIRECTORY USING "ls -l" COMMAND
 $ echo "Long listing of all files in present working directory: `ls -l`"
@@ -87,6 +96,12 @@ drwxr-xr-x 1 HP None  0 Dec 25 13:05 d2
 $ touch f5
 $ cat f5
 
+	#USING "touch" COMMAND FOR AN EXISTED FILE TO UPDATE IT'S TIMESTAMP
+$ ls -l f3
+-rwxr-xr-x 1 HP None 12 Dec 25 13:11 f3
+$ touch f3
+$ ls -l f3
+-rwxr-xr-x 1 HP None 12 Jan 19 22:23 f3
 
 	#GETTING CALENDER OF PRESENT MONTH USING "cal" COMMAND
 $ cal
@@ -97,3 +112,5 @@ Su Mo Tu We Th Fr Sa
 11 12 13 14 15 16 17
 18 19 20 21 22 23 24
 25 26 27 28 29 30 31
+
+
