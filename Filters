@@ -1,0 +1,2 @@
+           #FILTERS IN UNIX
+Filters are set of commands that take input from standard input stream and perform some operations and write output to the standard output stream.
