@@ -1,0 +1,32 @@
+#if
+$s="hello"
+$ if [ expr `length $s > 4` ]
+> then
+> echo "condition is verified for input string"
+> fi
+
+#if else
+$b=10
+$ if [ expr `$b % 2 "=" 0` ]
+> then
+> echo "it is an even number"
+> else
+> echo "it is an odd number"
+> fi
+it is an even number
+
+#if elif ladder 
+$ v=26
+$ if [ $v -gt 30 ]
+> then
+> echo "r1"
+> elif [ $v -gt 20 ]
+> then
+> echo "r2"
+> elif [ $v -gt 10 ]
+> then
+> echo "r3"
+> else
+> echo "r4"
+> fi
+r2

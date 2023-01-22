@@ -1,0 +1,52 @@
+$ cd d1
+
+$ cat >f5
+unix is one of the type of os.unix is a command based os
+linux is also command based os like unix
+unix supports multiusers and multitasking
+Unix is a modular os made up of number of essential components
+
+$ grep -i "Unix" f5
+unix is one of the type of os.unix is a command based os
+linux is also command based os like unix
+unix supports multiusers and multitasking
+Unix is a modular os made up of number of essential components
+
+$ grep -c "unix" f5
+3
+  
+$ grep -v "unix" f5
+Unix is a modular os made up of number of essential components
+
+$ grep -n "unix" f5
+1:unix is one of the type of os.unix is a command based os
+2:linux is also command based os like unix
+3:unix is a supports multiusers and multitasking
+
+$ grep -w "unix" f5
+unix is one of the type of os.unix is a command based os
+linux is also command based os like unix
+unix is a supports multiusers and multitasking
+
+$ grep -o "unix" f5
+unix
+unix
+unix
+unix
+
+$ grep "^unix" f5
+unix is one of the type of os.unix is a command based os
+unix is a supports multiusers and multitasking
+
+$ grep "unix$" f5
+linux is also command based os like unix
+
+$ cat >f6
+unix is a family of multitasking,multiuser computer operating system
+
+$ grep -l "unix" *
+grep: d2: Is a directory
+f5
+f6
+
+

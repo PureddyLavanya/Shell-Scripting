@@ -1,0 +1,55 @@
+$ cd d1
+$ cat >ex1
+unix is multi user os
+unix is command based os like linux
+unix and linux are useful os
+unix supports multi tasking
+unix is an open source os
+
+$ sed 's/unix/linux/g' ex1
+linux is multi user os
+linux is command based os like linux
+linux and linux are useful os
+linux supports multi tasking
+linux is an open source os
+
+$ sed 's/unix/linux/p' ex1
+linux is multi user os
+linux is multi user os
+linux is command based os like linux
+linux is command based os like linux
+linux and linux are useful os
+linux and linux are useful os
+linux supports multi tasking
+linux supports multi tasking
+linux is an open source os
+linux is an open source os
+
+$ sed '2s/unix/linux/' ex1
+unix is multi user os
+linux is command based os like linux
+unix and linux are useful os
+unix supports multi tasking
+unix is an open source os
+
+$ sed 's/unix/linux/2g' ex1
+unix is multi user os
+unix is command based os like linux
+unix and linux are useful os
+unix supports multi tasking
+unix is an open source os
+
+$ cat >ex2
+unix is a unix os like linux
+and unix is a unix like unix os
+
+$ sed 's/unix/linux/2g' ex2
+unix is a linux os like linux
+and unix is a linux like linux os
+
+$ sed '2,$ s/unix/linux/' ex1
+unix is multi user os
+linux is command based os like linux
+linux and linux are useful os
+linux supports multi tasking
+linux is an open source os

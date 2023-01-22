@@ -1,0 +1,89 @@
+$ cd d1
+$ cat >k
+a teacher cse 10000 maths
+b teacher eee 12000 english
+c hod cse 40000 coding
+d assc professor ece 15000 physics
+e assc professpr eee 16000 elec
+f teacher it 18000 c
+$ awk '{print $1}' k
+a
+b
+c
+d
+e
+f
+$ awk '{print $1,$2}' k
+a teacher
+b teacher
+c hod
+d assc
+e assc
+f teacher
+$ awk '{print NR $0}' k
+1a teacher cse 10000 maths
+2b teacher eee 12000 english
+3c hod cse 40000 coding
+4d assc professor ece 15000 physics
+5e assc professpr eee 16000 elec
+6f teacher it 18000 c
+$ awk '{print $1,NF}' k
+a 5
+b 5
+c 5
+d 6
+e 6
+f 5
+$ awk 'BEGIN {print "filecontents"}
+> {print $0}' k
+filecontents
+a teacher cse 10000 maths
+b teacher eee 12000 english
+c hod cse 40000 coding
+d assc professor ece 15000 physics
+e assc professpr eee 16000 elec
+f teacher it 18000 c
+$ awk 'BEGIN {print "begin of file"}
+> {print $0}
+> END {print "end of file"}' k
+begin of file
+a teacher cse 10000 maths
+b teacher eee 12000 english
+c hod cse 40000 coding
+d assc professor ece 15000 physics
+e assc professpr eee 16000 elec
+f teacher it 18000 c
+end of file
+$ awk '{print NR $1}' k
+1a
+2b
+3c
+4d
+5e
+6f
+$ awk '{print NR "-" $1}' k
+1-a
+2-b
+3-c
+4-d
+5-e
+6-f
+$ awk '{print $1,$(NF-1)}' k
+a 10000
+b 12000
+c 40000
+d 15000
+e 16000
+f 18000
+$ awk 'BEGIN {for(i=1;i<=5;i++)
+> print "square of" i "is" i*i}' k
+square of1is1
+square of2is4
+square of3is9
+square of4is16
+square of5is25
+$ max=0
+$ awk '{if (length($0)>max)
+> max=length($0)}
+> END {print max}' k
+34
