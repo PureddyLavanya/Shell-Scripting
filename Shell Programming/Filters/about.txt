@@ -1,0 +1,10 @@
+# ABOUT FILTERS IN UNIX 
+Filters are programs that take plain text(either stored in a file or produced by another program) as standard input, <br>
+transforms it into a meaningful format, and then returns it as standard output.<br>
+Here we discussed 3 types of filters.Those are:<br>
+1.grep(Global Regular Expression Print<br>
+2.sed(Stream Editor)<br>
+3.awk(abbreviated from the names of developers Aho,Weignberger and Kernighan)
+
+
+
