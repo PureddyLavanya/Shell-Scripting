@@ -1,5 +1,13 @@
 #FOR LOOP
-
+$ colors="red green blue yellow"
+$ for c in $colors
+> do
+> echo "color is:$c"
+> done
+color is:red
+color is:green
+color is:blue
+color is:yellow
 
 #WHILE LOOP
 $a=0
