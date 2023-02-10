@@ -1,7 +1,7 @@
 # SHELL-SCRIPTING
- <center>
+
    ![SHELL-SCRIPTING](https://user-images.githubusercontent.com/97614700/218132333-54219d1c-3910-4a5e-b1f5-476e3c5d0f39.jpg)
- </center>
+
  
     Shell program sometimes reffered to as shell script,is a program constructed of shell commands.
     In each shell script commands are executed one at a time by the shell.
