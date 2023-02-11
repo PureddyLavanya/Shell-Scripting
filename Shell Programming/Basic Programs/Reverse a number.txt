@@ -1,0 +1,12 @@
+$ read n                          #Reading input number using "read" command and storing in a variable name "n"
+12345
+$ s=0
+$ while [ $n -gt 0 ]              #Storing result of reverse of input number 
+> do
+> s=$(expr $s \* 10)
+> d=$(expr $n % 10)
+> s=$(expr $s + $d)
+> n=$(expr $n / 10)
+> done
+$ echo "Number after reversed $s"      #Printing reverse of input number to the screen
+Number after reversed 54321
