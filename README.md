@@ -1,6 +1,6 @@
 # SHELL-SCRIPTING
 
-   ![SHELL-SCRIPTING](https://user-images.githubusercontent.com/97614700/218132333-54219d1c-3910-4a5e-b1f5-476e3c5d0f39.jpg)
+   <img align="center" src="https://user-images.githubusercontent.com/97614700/218132333-54219d1c-3910-4a5e-b1f5-476e3c5d0f39.jpg"/>
 
  
     Shell program sometimes reffered to as shell script,is a program constructed of shell commands.
